@@ -1,30 +1,56 @@
-# Bookings Analytics
+# Bookings & Revenue Analytics Project
 
-This workspace contains a small analytics package, a FastAPI app and an exploratory notebook for computing historical analytics, forecasts, and recommendations from `bookings.xlsx` and `revenue.xlsx`.
+This repository contains a complete data analytics workflow for bookings and revenue data, including:
 
-Files added:
-- `src/analytics.py` - core analysis functions (loading, grouping, utilization, forecasts, recommendations)
-- `src/app.py` - FastAPI service exposing endpoints described in the prompt
-- `requirements.txt` - Python dependencies
-- `notebooks/exploratory.ipynb` - notebook demonstrating EDA and forecasting (opens locally)
+- **Comprehensive Exploratory Data Analysis (EDA)**
+- **Historical and Predictive Analytics**
+- **Rule-based and Machine Learning Recommendations**
+- **Interactive Streamlit Dashboard**
+- **Jupyter Notebooks for Prototyping and Interview Preparation**
 
-Quickstart (Windows PowerShell):
+## File Structure
 
-1. Create and activate a virtual environment (optional but recommended):
+- `src/analytics.py` — Core analytics, forecasting, and recommendation logic
+- `src/reporting.py` — Reporting and visualization helpers
+- `src/app.py` — FastAPI backend for analytics API (optional)
+- `streamlit_app.py` — Streamlit dashboard for interactive analysis
+- `notebooks/eda_analysis.ipynb` — EDA template for interview/assignment prep
+- `notebooks/exploratory.ipynb` — Exploratory analysis and prototyping
+- `requirements.txt` — Python dependencies
+- `bookings.xlsx`, `revenue.xlsx` — Example data files
+- `scripts/diagnostic_bookings.py`, `scripts/diagnostic_revenue.py` — Diagnostic scripts
 
-```powershell
-python -m venv .venv; .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
+## Installation & How to Run
 
-2. Run the API:
+1. **Clone the repository** (or download the files):
+   ```bash
+   git clone <your-repo-url>
+   cd <your-repo-folder>
+   ```
 
-```powershell
-uvicorn src.app:app --reload --port 8000
-```
+2. **Create a virtual environment (recommended):**
+   ```bash
+   python -m venv env
+   # On Windows:
+   env\Scripts\activate
+   # On Mac/Linux:
+   source env/bin/activate
+   ```
 
-3. Open the notebook in Jupyter or VS Code and run cells to reproduce analytics.
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Notes:
-- The code attempts to be robust to common column name variations, but you may need to adapt column names to your exact files.
-- Prophet package may be installed as `prophet` or `fbprophet` depending on environment; adjust `requirements.txt` if needed.
+4. **Run the Streamlit dashboard:**
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+   - The dashboard will open in your browser. Use the sidebar to load your data and explore analytics.
+
+5. **Explore the Jupyter notebooks** for EDA and prototyping (open with Jupyter Lab/Notebook or VS Code).
+
+
+## Notes
+- Update file paths in notebooks and scripts as needed.
+- Remove or anonymize any sensitive data before sharing publicly.
