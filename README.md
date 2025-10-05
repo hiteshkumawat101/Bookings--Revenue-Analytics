@@ -12,9 +12,9 @@ This repository contains a complete data analytics workflow for bookings and rev
 
 - `src/analytics.py` — Core analytics, forecasting, and recommendation logic
 - `src/reporting.py` — Reporting and visualization helpers
-- `src/app.py` — FastAPI backend for analytics API (optional)
+- `src/app.py` — FastAPI backend for analytics API 
 - `streamlit_app.py` — Streamlit dashboard for interactive analysis
-- `notebooks/eda_analysis.ipynb` — EDA template for interview/assignment prep
+- `notebooks/eda_analysis.ipynb` — EDA template
 - `notebooks/exploratory.ipynb` — Exploratory analysis and prototyping
 - `requirements.txt` — Python dependencies
 - `bookings.xlsx`, `revenue.xlsx` — Example data files
@@ -54,3 +54,4 @@ This repository contains a complete data analytics workflow for bookings and rev
 ## Notes
 - Update file paths in notebooks and scripts as needed.
 - Remove or anonymize any sensitive data before sharing publicly.
+
