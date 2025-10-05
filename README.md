@@ -6,7 +6,7 @@ This repository contains a complete data analytics workflow for bookings and rev
 - **Historical and Predictive Analytics**
 - **Rule-based and Machine Learning Recommendations**
 - **Interactive Streamlit Dashboard**
-- **Jupyter Notebooks for Prototyping and Interview Preparation**
+- **Jupyter Notebooks for Prototyping**
 
 ## File Structure
 
@@ -54,4 +54,5 @@ This repository contains a complete data analytics workflow for bookings and rev
 ## Notes
 - Update file paths in notebooks and scripts as needed.
 - Remove or anonymize any sensitive data before sharing publicly.
+
 
